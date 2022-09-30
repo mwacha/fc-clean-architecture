@@ -13,7 +13,7 @@ describe("Product repository test", () => {
       logging: false,
       sync: { force: true },
     });
-    sequileze.addModels([ProductModel]);
+    await sequileze.addModels([ProductModel]);
     await sequileze.sync();
   });
 
